@@ -22,7 +22,7 @@ if($id == 0){
 	
 ?>
 
-<form method="post" action="pristup_izmjena.php?akcija=uredi&id=<?php echo $id ?>">
+<form method="post" action="korisnici_izmjena.php?akcija=uredi&id=<?php echo $id ?>">
 Ime: <input type="text" name="ime" value="<?php echo $ime ?>"><br>
 Prezime: <input type="text" name="prezime" value="<?php echo $prezime ?>"><br>
 Korisničko ime: <input type="text" name="korisnicko_ime" value="<?php echo $korisnicko_ime ?>"><br>

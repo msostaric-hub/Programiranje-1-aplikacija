@@ -12,20 +12,20 @@ include("pdo.php");
 	
 	if($akcija == "brisanje"){
 		$query = $db->query("DELETE FROM administratori WHERE id = " . $id);
-		header("Location:pristup.php");
+		header("Location:korisnici.php");
 	}elseif($akcija == "uredi"){
 		
 		if($submit == "Dodaj"){
 			$query = $db->query("INSERT INTO administratori (ime, prezime, korisnicko_ime, lozinka)VALUES('$ime', '$prezime', '$korisnicko_ime', '$lozinka')");
-			header("Location:pristup.php");
+			header("Location:korisnici.php");
 		}elseif($submit == "Spremi"){
 			$query = $db->query("UPDATE administratori SET ime = '$ime', prezime = '$prezime', korisnicko_ime = '$korisnicko_ime', lozinka = '$lozinka' WHERE id = " . $id);
-			header("Location:pristup.php");
+			header("Location:korisnici.php");
 		}else{
-			header("Location:pristup.php");
+			header("Location:korisnici.php");
 		}
 	}else{
-		header("Location:pristup.php");
+		header("Location:korisnici.php");
 	}
 	
 ?>

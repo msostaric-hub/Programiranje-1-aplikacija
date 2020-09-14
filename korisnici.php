@@ -9,7 +9,7 @@ $rezultati = $query->fetchAll();
 <table>
 	<tr>
 	<th>Korisnici / administratori</th>
-	<th><a href="pristup_forma.php">novi</a></th>
+	<th><a href="korisnici_forma.php">novi</a></th>
 	<tr>
 <?php
 
